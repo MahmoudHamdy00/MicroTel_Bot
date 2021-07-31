@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_n4uhao()
+[Activity
+    Text = ${SendActivity_n4uhao_text()}
+]
+
+# SendActivity_n4uhao_text()
+- you are in `verify tier`

@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "c5RPVo",
+    "name": "verifyAddress",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "DaW5Ny"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "1NB77D"
+          },
+          "activity": "${SendActivity_1NB77D()}"
+        }
+      ]
+    }
+  ],
+  "generator": "verifyAddress.lg",
+  "recognizer": "verifyAddress.lu.qna",
+  "id": "verifyAddress"
+}

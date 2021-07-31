@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "YLwp6d",
+    "name": "verifyNationalId",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "I3atJU"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "vW7FiS"
+          },
+          "activity": "${SendActivity_vW7FiS()}"
+        }
+      ]
+    }
+  ],
+  "generator": "verifyNationalId.lg",
+  "recognizer": "verifyNationalId.lu.qna",
+  "id": "verifyNationalId"
+}

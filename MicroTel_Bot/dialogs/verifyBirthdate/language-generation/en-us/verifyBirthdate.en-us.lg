@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_muKuuI()
+[Activity
+    Text = ${SendActivity_muKuuI_text()}
+]
+
+# SendActivity_muKuuI_text()
+- you are in `verify birthdate`

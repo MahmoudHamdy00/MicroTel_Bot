@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_7NiiyK()
+[Activity
+    Text = ${SendActivity_7NiiyK_text()}
+]
+
+# SendActivity_7NiiyK_text()
+- you are in `extract data`

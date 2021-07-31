@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_b1bPtT()
+[Activity
+    Text = ${SendActivity_b1bPtT_text()}
+]
+
+# SendActivity_b1bPtT_text()
+- you are in `verifyName`
+# SendActivity_3LZVPd()
+[Activity
+    Text = ${SendActivity_3LZVPd_text()}
+]
+
+# SendActivity_3LZVPd_text()
+- your input is : ${dialog.name} :

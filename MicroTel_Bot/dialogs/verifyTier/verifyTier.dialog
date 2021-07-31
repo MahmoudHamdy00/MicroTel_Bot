@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "q83i3g",
+    "name": "verifyTier",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "dUv5B5"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "n4uhao"
+          },
+          "activity": "${SendActivity_n4uhao()}"
+        }
+      ]
+    }
+  ],
+  "generator": "verifyTier.lg",
+  "recognizer": "verifyTier.lu.qna",
+  "id": "verifyTier"
+}

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroTel_Bot", "MicroTel_Bot\MicroTel_Bot.csproj", "{AB174207-FE8E-4BA1-AE03-53F2BF463B56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroTel_Bot", "MicroTel_Bot\MicroTel_Bot.csproj", "{DD188C53-68F3-4E79-8FFF-3527FCE3FD8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AB174207-FE8E-4BA1-AE03-53F2BF463B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB174207-FE8E-4BA1-AE03-53F2BF463B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB174207-FE8E-4BA1-AE03-53F2BF463B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB174207-FE8E-4BA1-AE03-53F2BF463B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD188C53-68F3-4E79-8FFF-3527FCE3FD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD188C53-68F3-4E79-8FFF-3527FCE3FD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD188C53-68F3-4E79-8FFF-3527FCE3FD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD188C53-68F3-4E79-8FFF-3527FCE3FD8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {38CBBB04-7838-4EBC-B15A-10E4B0654A36}
+		SolutionGuid = {1D14C631-0498-41B2-8D3E-D14B9685F1BC}
 	EndGlobalSection
 EndGlobal

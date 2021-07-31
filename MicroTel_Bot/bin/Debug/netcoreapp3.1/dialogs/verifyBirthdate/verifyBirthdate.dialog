@@ -1,0 +1,32 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "oXPs3R",
+    "name": "verifyBirthdate",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "7HhIAx"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "muKuuI"
+          },
+          "activity": "${SendActivity_muKuuI()}"
+        }
+      ]
+    }
+  ],
+  "generator": "verifyBirthdate.lg",
+  "recognizer": "verifyBirthdate.lu.qna",
+  "id": "verifyBirthdate"
+}

@@ -1,0 +1,46 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "FLs4us",
+    "name": "VerifyName",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "M8BbYO"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "b1bPtT"
+          },
+          "activity": "${SendActivity_b1bPtT()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "3LZVPd"
+          },
+          "activity": "${SendActivity_3LZVPd()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "h2nEsZ"
+          },
+          "condition": "=exists(name)"
+        }
+      ]
+    }
+  ],
+  "generator": "VerifyName.lg",
+  "recognizer": "VerifyName.lu.qna",
+  "id": "VerifyName"
+}

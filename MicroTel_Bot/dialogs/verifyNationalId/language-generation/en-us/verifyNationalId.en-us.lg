@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_vW7FiS()
+[Activity
+    Text = ${SendActivity_vW7FiS_text()}
+]
+
+# SendActivity_vW7FiS_text()
+- you are in `verify natID`

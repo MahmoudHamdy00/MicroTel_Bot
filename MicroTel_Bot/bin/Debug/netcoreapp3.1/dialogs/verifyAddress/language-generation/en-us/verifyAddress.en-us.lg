@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_1NB77D()
+[Activity
+    Text = ${SendActivity_1NB77D_text()}
+]
+
+# SendActivity_1NB77D_text()
+- you are in `verify address`

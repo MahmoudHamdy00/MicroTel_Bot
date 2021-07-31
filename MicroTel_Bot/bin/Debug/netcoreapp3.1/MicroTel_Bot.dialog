@@ -1,9 +1,9 @@
 {
   "$kind": "Microsoft.AdaptiveDialog",
   "$designer": {
-      "name": "MicroTel_Bot",
-      "description": "",
-      "id": "4pM5gc"
+    "name": "MicroTel_Bot",
+    "description": "",
+    "id": "4pM5gc"
   },
   "autoEndDialog": true,
   "defaultResultProperty": "dialog.result",
@@ -131,9 +131,35 @@
           "activity": "${SendActivity_DidNotUnderstand()}"
         }
       ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "NaBdLu",
+        "name": "useraction"
+      },
+      "intent": "useraction",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "XX0RLl"
+          },
+          "activityProcessed": true,
+          "dialog": "UserAction"
+        }
+      ]
     }
   ],
   "generator": "MicroTel_Bot.lg",
   "id": "MicroTel_Bot",
-  "recognizer": "MicroTel_Bot.lu.qna"
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": [
+      {
+        "intent": "useraction",
+        "pattern": "useraction"
+      }
+    ]
+  }
 }

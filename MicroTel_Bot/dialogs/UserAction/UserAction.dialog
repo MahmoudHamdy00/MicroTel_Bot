@@ -1,0 +1,160 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "gndRJp",
+    "name": "UserAction",
+    "comment": "this dialog is for signup new user or to be used when the user forget his number"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "JM0Hpl"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "61nogC"
+          },
+          "activity": "${SendActivity_61nogC()}"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "dxc72o"
+          },
+          "activity": "${SendActivity_dxc72o()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "OgHTlx"
+          },
+          "activityProcessed": true,
+          "dialog": "ExtractData",
+          "options": {
+            "utterance": "turn.activity.text"
+          }
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "tn6L1m"
+          },
+          "activityProcessed": true,
+          "dialog": "VerifyName",
+          "resultProperty": "user.fname",
+          "options": {
+            "dialog.name": "turn.activity.text"
+          }
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "V8p5gR"
+          },
+          "activityProcessed": true,
+          "dialog": "VerifyName",
+          "resultProperty": "user.lname"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "9LIfKX"
+          },
+          "activityProcessed": true,
+          "dialog": "verifyBirthdate",
+          "resultProperty": "user.birthdate"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "vnlzAc"
+          },
+          "activityProcessed": true,
+          "dialog": "verifyNationalId",
+          "resultProperty": "user.nationalID"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "62HMCh"
+          },
+          "activityProcessed": true,
+          "dialog": "verifyAddress",
+          "resultProperty": "user.address"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "74Lfeb"
+          },
+          "condition": "=exists(@action)",
+          "actions": [
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "vQ4kZA"
+              },
+              "condition": "@action",
+              "cases": [
+                {
+                  "value": "singup",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "V0ajn2"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "signUp"
+                    }
+                  ]
+                },
+                {
+                  "value": "forget",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "h8YjZY"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "forgetNumber"
+                    }
+                  ]
+                }
+              ],
+              "default": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "N7wVb1"
+                  },
+                  "activity": "${SendActivity_N7wVb1()}"
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "gdNm9B"
+              },
+              "activity": "${SendActivity_gdNm9B()}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "UserAction.lg",
+  "recognizer": "UserAction.lu.qna",
+  "id": "UserAction"
+}

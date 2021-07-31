@@ -1,0 +1,30 @@
+[import](common.lg)
+
+# SendActivity_gdNm9B()
+[Activity
+    Text = ${SendActivity_gdNm9B_text()}
+]
+
+# SendActivity_gdNm9B_text()
+- Sorry I can't understand what  you want.
+# SendActivity_N7wVb1()
+[Activity
+    Text = ${SendActivity_N7wVb1_text()}
+]
+
+# SendActivity_N7wVb1_text()
+- Sorry I can't understand what  you want.
+# SendActivity_dxc72o()
+[Activity
+    Text = ${SendActivity_dxc72o_text()}
+]
+
+# SendActivity_dxc72o_text()
+- you are in `user action`
+# SendActivity_61nogC()
+[Activity
+    Text = ${SendActivity_61nogC_text()}
+]
+
+# SendActivity_61nogC_text()
+- your utterance is ${turn.activity.text}
