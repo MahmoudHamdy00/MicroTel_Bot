@@ -22,6 +22,44 @@
             "id": "muKuuI"
           },
           "activity": "${SendActivity_muKuuI()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "DDU8Nr"
+          },
+          "condition": "=exists(dialog.birthdate)",
+          "actions": [
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "kgSj14"
+              },
+              "value": "${dialog.birthdate}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "TQQnRc"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_TQQnRc()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": ""
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "6wQlUh"
+              }
+            }
+          ]
         }
       ]
     }

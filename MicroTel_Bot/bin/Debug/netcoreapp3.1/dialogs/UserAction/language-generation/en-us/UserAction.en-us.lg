@@ -1,19 +1,5 @@
 [import](common.lg)
 
-# SendActivity_gdNm9B()
-[Activity
-    Text = ${SendActivity_gdNm9B_text()}
-]
-
-# SendActivity_gdNm9B_text()
-- Sorry I can't understand what  you want.
-# SendActivity_N7wVb1()
-[Activity
-    Text = ${SendActivity_N7wVb1_text()}
-]
-
-# SendActivity_N7wVb1_text()
-- Sorry I can't understand what  you want.
 # SendActivity_dxc72o()
 [Activity
     Text = ${SendActivity_dxc72o_text()}
@@ -21,10 +7,18 @@
 
 # SendActivity_dxc72o_text()
 - you are in `user action`
-# SendActivity_61nogC()
+# SendActivity_qWqgxh_text()
+- Sorry I can't understand what  you want.
+# SendActivity_qWqgxh()
 [Activity
-    Text = ${SendActivity_61nogC_text()}
+    Text = ${SendActivity_qWqgxh_text()}
 ]
 
-# SendActivity_61nogC_text()
-- your utterance is ${turn.activity.text}
+# SendActivity_WUYx3O()
+[Activity
+    Text = ${SendActivity_WUYx3O_text()}
+]
+
+# SendActivity_WUYx3O_text()
+- ```user is ${@userInfo}
+tier is ${@tier}```

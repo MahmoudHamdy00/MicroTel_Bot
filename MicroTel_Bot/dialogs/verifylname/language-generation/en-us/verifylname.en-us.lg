@@ -1,0 +1,15 @@
+[import](common.lg)
+
+# SendActivity_2QnIAd_text()
+- you are in `verifylname`
+# SendActivity_2QnIAd()
+[Activity
+    Text = ${SendActivity_2QnIAd_text()}
+]
+
+# TextInput_Prompt_6Q8Zqj_text()
+- What is you last name?
+# TextInput_Prompt_6Q8Zqj()
+[Activity
+    Text = ${TextInput_Prompt_6Q8Zqj_text()}
+]

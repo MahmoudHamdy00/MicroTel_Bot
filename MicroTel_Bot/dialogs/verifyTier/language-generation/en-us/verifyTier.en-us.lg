@@ -7,3 +7,10 @@
 
 # SendActivity_n4uhao_text()
 - you are in `verify tier`
+# ChoiceInput_Prompt_lHVy9n()
+[Activity
+    Text = ${ChoiceInput_Prompt_lHVy9n_text()}
+]
+
+# ChoiceInput_Prompt_lHVy9n_text()
+- What tier do you want to subscribe to?

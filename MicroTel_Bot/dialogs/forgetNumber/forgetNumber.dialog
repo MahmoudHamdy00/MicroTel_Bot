@@ -13,7 +13,8 @@
       "$designer": {
         "name": "BeginDialog",
         "description": "",
-        "id": "Zj0FT9"
+        "id": "Zj0FT9",
+        "comment": "connect to DB,verify the user exists and if so return his number"
       },
       "actions": [
         {

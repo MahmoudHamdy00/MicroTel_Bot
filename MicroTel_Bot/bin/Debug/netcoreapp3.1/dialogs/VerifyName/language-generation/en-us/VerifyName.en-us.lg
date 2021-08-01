@@ -6,11 +6,11 @@
 ]
 
 # SendActivity_b1bPtT_text()
-- you are in `verifyName`
-# SendActivity_3LZVPd()
+- you are in `verifyfName`
+# TextInput_Prompt_k1ywbs()
 [Activity
-    Text = ${SendActivity_3LZVPd_text()}
+    Text = ${TextInput_Prompt_k1ywbs_text()}
 ]
 
-# SendActivity_3LZVPd_text()
-- your input is : ${dialog.name} :
+# TextInput_Prompt_k1ywbs_text()
+- What is you first name?

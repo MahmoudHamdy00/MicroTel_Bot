@@ -24,18 +24,42 @@
           "activity": "${SendActivity_b1bPtT()}"
         },
         {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "3LZVPd"
-          },
-          "activity": "${SendActivity_3LZVPd()}"
-        },
-        {
           "$kind": "Microsoft.IfCondition",
           "$designer": {
             "id": "h2nEsZ"
           },
-          "condition": "=exists(name)"
+          "condition": "=exists(user.fname)",
+          "actions": [
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "tLOceA"
+              },
+              "value": "${user.fname}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "k1ywbs"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_k1ywbs()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": ""
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "aEFsbD"
+              }
+            }
+          ]
         }
       ]
     }

@@ -135,15 +135,15 @@
     {
       "$kind": "Microsoft.OnIntent",
       "$designer": {
-        "id": "NaBdLu",
-        "name": "useraction"
+        "id": "fKnSsI",
+        "name": "UserAction"
       },
-      "intent": "useraction",
+      "intent": "UserAction",
       "actions": [
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "XX0RLl"
+            "id": "S84SFi"
           },
           "activityProcessed": true,
           "dialog": "UserAction"
@@ -153,13 +153,5 @@
   ],
   "generator": "MicroTel_Bot.lg",
   "id": "MicroTel_Bot",
-  "recognizer": {
-    "$kind": "Microsoft.RegexRecognizer",
-    "intents": [
-      {
-        "intent": "useraction",
-        "pattern": "useraction"
-      }
-    ]
-  }
+  "recognizer": "MicroTel_Bot.lu.qna"
 }

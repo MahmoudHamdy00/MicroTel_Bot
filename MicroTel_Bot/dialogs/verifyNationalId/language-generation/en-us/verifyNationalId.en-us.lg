@@ -7,3 +7,9 @@
 
 # SendActivity_vW7FiS_text()
 - you are in `verify natID`
+# TextInput_Prompt_Xb39A8_text()
+- What is your nationalID?
+# TextInput_Prompt_Xb39A8()
+[Activity
+    Text = ${TextInput_Prompt_Xb39A8_text()}
+]

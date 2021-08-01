@@ -22,6 +22,44 @@
             "id": "vW7FiS"
           },
           "activity": "${SendActivity_vW7FiS()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "b7rzdy"
+          },
+          "condition": "=exists(dialog.nationalID)",
+          "actions": [
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "0mukD2"
+              },
+              "value": "${dialog.nationalID}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "Xb39A8"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_Xb39A8()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": ""
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "7mab4d"
+              }
+            }
+          ]
         }
       ]
     }

@@ -7,3 +7,9 @@
 
 # SendActivity_muKuuI_text()
 - you are in `verify birthdate`
+# TextInput_Prompt_TQQnRc_text()
+- What is you birthdate?
+# TextInput_Prompt_TQQnRc()
+[Activity
+    Text = ${TextInput_Prompt_TQQnRc_text()}
+]

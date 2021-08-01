@@ -19,26 +19,37 @@
         {
           "$kind": "Microsoft.SendActivity",
           "$designer": {
-            "id": "61nogC"
-          },
-          "activity": "${SendActivity_61nogC()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
             "id": "dxc72o"
           },
           "activity": "${SendActivity_dxc72o()}"
         },
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "WUYx3O"
+          },
+          "activity": "${SendActivity_WUYx3O()}"
+        },
+        {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "OgHTlx"
+            "id": "zRX7v7"
           },
           "activityProcessed": true,
-          "dialog": "ExtractData",
+          "dialog": "ExtarctUserInfo",
           "options": {
-            "utterance": "turn.activity.text"
+            "userInfo": "=@userInfo"
+          }
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "juCalC"
+          },
+          "activityProcessed": true,
+          "dialog": "ExtractTier",
+          "options": {
+            "tier": "=@tier"
           }
         },
         {
@@ -49,9 +60,7 @@
           "activityProcessed": true,
           "dialog": "VerifyName",
           "resultProperty": "user.fname",
-          "options": {
-            "dialog.name": "turn.activity.text"
-          }
+          "options": {}
         },
         {
           "$kind": "Microsoft.BeginDialog",
@@ -59,8 +68,9 @@
             "id": "V8p5gR"
           },
           "activityProcessed": true,
-          "dialog": "VerifyName",
-          "resultProperty": "user.lname"
+          "dialog": "verifylname",
+          "resultProperty": "user.lname",
+          "options": {}
         },
         {
           "$kind": "Microsoft.BeginDialog",
@@ -69,7 +79,8 @@
           },
           "activityProcessed": true,
           "dialog": "verifyBirthdate",
-          "resultProperty": "user.birthdate"
+          "resultProperty": "user.birthdate",
+          "options": {}
         },
         {
           "$kind": "Microsoft.BeginDialog",
@@ -78,7 +89,8 @@
           },
           "activityProcessed": true,
           "dialog": "verifyNationalId",
-          "resultProperty": "user.nationalID"
+          "resultProperty": "user.nationalID",
+          "options": {}
         },
         {
           "$kind": "Microsoft.BeginDialog",
@@ -87,67 +99,50 @@
           },
           "activityProcessed": true,
           "dialog": "verifyAddress",
-          "resultProperty": "user.address"
+          "resultProperty": "user.address",
+          "options": {}
         },
         {
-          "$kind": "Microsoft.IfCondition",
+          "$kind": "Microsoft.SwitchCondition",
           "$designer": {
-            "id": "74Lfeb"
+            "id": "NUp7bS"
           },
-          "condition": "=exists(@action)",
-          "actions": [
+          "condition": "@action",
+          "cases": [
             {
-              "$kind": "Microsoft.SwitchCondition",
-              "$designer": {
-                "id": "vQ4kZA"
-              },
-              "condition": "@action",
-              "cases": [
+              "value": "singup",
+              "actions": [
                 {
-                  "value": "singup",
-                  "actions": [
-                    {
-                      "$kind": "Microsoft.BeginDialog",
-                      "$designer": {
-                        "id": "V0ajn2"
-                      },
-                      "activityProcessed": true,
-                      "dialog": "signUp"
-                    }
-                  ]
-                },
-                {
-                  "value": "forget",
-                  "actions": [
-                    {
-                      "$kind": "Microsoft.BeginDialog",
-                      "$designer": {
-                        "id": "h8YjZY"
-                      },
-                      "activityProcessed": true,
-                      "dialog": "forgetNumber"
-                    }
-                  ]
-                }
-              ],
-              "default": [
-                {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginDialog",
                   "$designer": {
-                    "id": "N7wVb1"
+                    "id": "wfy2kW"
                   },
-                  "activity": "${SendActivity_N7wVb1()}"
+                  "activityProcessed": true,
+                  "dialog": "signUp"
+                }
+              ]
+            },
+            {
+              "value": "forget",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "kYuV7z"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "forgetNumber"
                 }
               ]
             }
           ],
-          "elseActions": [
+          "default": [
             {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "gdNm9B"
+                "id": "qWqgxh"
               },
-              "activity": "${SendActivity_gdNm9B()}"
+              "activity": "${SendActivity_qWqgxh()}"
             }
           ]
         }

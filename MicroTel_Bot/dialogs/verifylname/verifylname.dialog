@@ -1,0 +1,70 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "n74DUL",
+    "name": "verifylname",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "mCZXgt"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "2QnIAd"
+          },
+          "activity": "${SendActivity_2QnIAd()}"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "46hovM"
+          },
+          "condition": "=exists(user.lname)",
+          "actions": [
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "zILK72"
+              },
+              "value": "${user.lname}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.TextInput",
+              "$designer": {
+                "id": "6Q8Zqj"
+              },
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${TextInput_Prompt_6Q8Zqj()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": ""
+            },
+            {
+              "$kind": "Microsoft.EndDialog",
+              "$designer": {
+                "id": "nTG9Fg"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "verifylname.lg",
+  "recognizer": "verifylname.lu.qna",
+  "id": "verifylname"
+}
