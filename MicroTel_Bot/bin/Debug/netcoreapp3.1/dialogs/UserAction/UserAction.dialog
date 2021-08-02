@@ -17,20 +17,6 @@
       },
       "actions": [
         {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "dxc72o"
-          },
-          "activity": "${SendActivity_dxc72o()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "WUYx3O"
-          },
-          "activity": "${SendActivity_WUYx3O()}"
-        },
-        {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
             "id": "zRX7v7"
@@ -50,6 +36,26 @@
           "dialog": "ExtractTier",
           "options": {
             "tier": "=@tier"
+          }
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "bVWd5U"
+          },
+          "activity": "${SendActivity_bVWd5U()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "4SARdK",
+            "comment": ""
+          },
+          "activityProcessed": true,
+          "dialog": "verifyNationalId",
+          "resultProperty": "user.nationalID",
+          "options": {
+            "nationalID": "=user.nationalID"
           }
         },
         {
@@ -80,16 +86,6 @@
           "activityProcessed": true,
           "dialog": "verifyBirthdate",
           "resultProperty": "user.birthdate",
-          "options": {}
-        },
-        {
-          "$kind": "Microsoft.BeginDialog",
-          "$designer": {
-            "id": "vnlzAc"
-          },
-          "activityProcessed": true,
-          "dialog": "verifyNationalId",
-          "resultProperty": "user.nationalID",
           "options": {}
         },
         {

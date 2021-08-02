@@ -6,7 +6,7 @@
 ]
 
 # SendActivity_vW7FiS_text()
-- you are in `verify natID`
+- Your ID is ${dialog.nationalID}
 # TextInput_Prompt_Xb39A8_text()
 - What is your nationalID?
 # TextInput_Prompt_Xb39A8()

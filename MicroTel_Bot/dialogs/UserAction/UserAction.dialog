@@ -41,6 +41,19 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
+            "id": "4SARdK",
+            "comment": ""
+          },
+          "activityProcessed": true,
+          "dialog": "verifyNationalId",
+          "resultProperty": "user.nationalID",
+          "options": {
+            "nationalID": "=user.nationalID"
+          }
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
             "id": "tn6L1m"
           },
           "activityProcessed": true,
@@ -66,16 +79,6 @@
           "activityProcessed": true,
           "dialog": "verifyBirthdate",
           "resultProperty": "user.birthdate",
-          "options": {}
-        },
-        {
-          "$kind": "Microsoft.BeginDialog",
-          "$designer": {
-            "id": "vnlzAc"
-          },
-          "activityProcessed": true,
-          "dialog": "verifyNationalId",
-          "resultProperty": "user.nationalID",
           "options": {}
         },
         {

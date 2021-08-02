@@ -34,8 +34,7 @@
               "$kind": "Microsoft.EndDialog",
               "$designer": {
                 "id": "tLOceA"
-              },
-              "value": "${user.fname}"
+              }
             }
           ],
           "elseActions": [

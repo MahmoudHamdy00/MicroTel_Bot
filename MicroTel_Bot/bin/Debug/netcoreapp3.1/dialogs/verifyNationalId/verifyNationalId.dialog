@@ -29,15 +29,7 @@
             "id": "b7rzdy"
           },
           "condition": "=exists(dialog.nationalID)",
-          "actions": [
-            {
-              "$kind": "Microsoft.EndDialog",
-              "$designer": {
-                "id": "0mukD2"
-              },
-              "value": "${dialog.nationalID}"
-            }
-          ],
+          "actions": [],
           "elseActions": [
             {
               "$kind": "Microsoft.TextInput",
@@ -52,14 +44,15 @@
               "unrecognizedPrompt": "",
               "invalidPrompt": "",
               "defaultValueResponse": ""
-            },
-            {
-              "$kind": "Microsoft.EndDialog",
-              "$designer": {
-                "id": "7mab4d"
-              }
             }
           ]
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "YnX43o"
+          },
+          "value": "${dialog.nationalID}"
         }
       ]
     }
