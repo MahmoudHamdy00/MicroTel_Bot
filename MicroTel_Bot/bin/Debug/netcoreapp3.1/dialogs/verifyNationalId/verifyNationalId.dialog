@@ -41,9 +41,18 @@
               "alwaysPrompt": false,
               "allowInterruptions": false,
               "prompt": "${TextInput_Prompt_Xb39A8()}",
-              "unrecognizedPrompt": "",
-              "invalidPrompt": "",
-              "defaultValueResponse": ""
+              "invalidPrompt": "${TextInput_InvalidPrompt_Xb39A8()}",
+              "validations": [
+                "=exists(@nationalID)"
+              ]
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "ZeZf3i"
+              },
+              "property": "dialog.nationalID",
+              "value": "=@nationalID"
             }
           ]
         },

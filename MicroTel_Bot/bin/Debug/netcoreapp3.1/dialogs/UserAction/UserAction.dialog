@@ -39,13 +39,6 @@
           }
         },
         {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "bVWd5U"
-          },
-          "activity": "${SendActivity_bVWd5U()}"
-        },
-        {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
             "id": "4SARdK",
@@ -57,6 +50,13 @@
           "options": {
             "nationalID": "=user.nationalID"
           }
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "RQUdR2"
+          },
+          "activity": "${SendActivity_RQUdR2()}"
         },
         {
           "$kind": "Microsoft.BeginDialog",
