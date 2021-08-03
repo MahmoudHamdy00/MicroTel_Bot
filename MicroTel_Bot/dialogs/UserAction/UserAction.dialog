@@ -41,6 +41,18 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
+            "id": "YxOgsY"
+          },
+          "activityProcessed": true,
+          "dialog": "AddressDialog",
+          "resultProperty": "user.address",
+          "options": {
+            "address": "=user.address"
+          }
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
             "id": "tn6L1m"
           },
           "activityProcessed": true,
@@ -80,16 +92,6 @@
           "options": {
             "nationalID": "=user.nationalID"
           }
-        },
-        {
-          "$kind": "Microsoft.BeginDialog",
-          "$designer": {
-            "id": "62HMCh"
-          },
-          "activityProcessed": true,
-          "dialog": "verifyAddress",
-          "resultProperty": "user.address",
-          "options": {}
         },
         {
           "$kind": "Microsoft.SwitchCondition",
