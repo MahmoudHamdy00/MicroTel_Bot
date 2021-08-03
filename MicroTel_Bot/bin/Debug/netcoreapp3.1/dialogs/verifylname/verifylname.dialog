@@ -45,7 +45,8 @@
               "$designer": {
                 "id": "3t5bEi"
               },
-              "activity": "${SendActivity_3t5bEi()}"
+              "activity": "${SendActivity_3t5bEi()}",
+              "disabled": true
             },
             {
               "$kind": "Microsoft.IfCondition",

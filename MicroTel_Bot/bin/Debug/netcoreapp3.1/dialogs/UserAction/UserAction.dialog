@@ -30,24 +30,24 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "juCalC"
-          },
-          "activityProcessed": true,
-          "dialog": "ExtractTier",
-          "options": {
-            "tier": "=@tier"
-          }
-        },
-        {
-          "$kind": "Microsoft.BeginDialog",
-          "$designer": {
-            "id": "YxOgsY"
+            "id": "DoumLz"
           },
           "activityProcessed": true,
           "dialog": "AddressDialog",
           "resultProperty": "user.address",
           "options": {
             "address": "=user.address"
+          }
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "juCalC"
+          },
+          "activityProcessed": true,
+          "dialog": "ExtractTier",
+          "options": {
+            "tier": "=@tier"
           }
         },
         {

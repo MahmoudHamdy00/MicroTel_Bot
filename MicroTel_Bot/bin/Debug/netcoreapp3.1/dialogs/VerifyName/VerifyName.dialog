@@ -44,7 +44,8 @@
               "$designer": {
                 "id": "Pz8RAV"
               },
-              "activity": "${SendActivity_Pz8RAV()}"
+              "activity": "${SendActivity_Pz8RAV()}",
+              "disabled": true
             },
             {
               "$kind": "Microsoft.SetProperty",

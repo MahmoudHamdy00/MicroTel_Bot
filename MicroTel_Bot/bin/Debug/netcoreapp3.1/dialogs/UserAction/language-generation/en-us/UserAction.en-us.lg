@@ -1,7 +1,7 @@
 [import](common.lg)
 
 # SendActivity_qWqgxh_text()
-- Sorry I can't understand what  you want.
+- Sorry I can't understand what you want.
 # SendActivity_qWqgxh()
 [Activity
     Text = ${SendActivity_qWqgxh_text()}
