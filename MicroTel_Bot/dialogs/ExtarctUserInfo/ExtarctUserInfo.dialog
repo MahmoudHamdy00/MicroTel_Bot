@@ -62,7 +62,7 @@
             "id": "gRRjLM"
           },
           "property": "user.address",
-          "value": "=dialog.userInfo.address"
+          "value": "=dialog.userInfo.address[0]"
         },
         {
           "$kind": "Microsoft.SendActivity",

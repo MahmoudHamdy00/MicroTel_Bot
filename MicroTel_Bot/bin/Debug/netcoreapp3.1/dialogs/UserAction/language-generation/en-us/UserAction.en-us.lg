@@ -14,3 +14,4 @@
 
 # SendActivity_Ed2YXt_text()
 - hello ${user.fname} , ${user.mname}- ${user.lname}
+

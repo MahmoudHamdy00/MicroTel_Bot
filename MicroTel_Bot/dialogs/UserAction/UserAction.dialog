@@ -76,22 +76,27 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "vnlzAc"
+            "id": "ANvefA",
+            "comment": ""
           },
           "activityProcessed": true,
           "dialog": "verifyNationalId",
           "resultProperty": "user.nationalID",
-          "options": {}
+          "options": {
+            "nationalID": "=user.nationalID"
+          }
         },
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "62HMCh"
+            "id": "vd4gsO"
           },
           "activityProcessed": true,
-          "dialog": "verifyAddress",
+          "dialog": "AddressDialog",
           "resultProperty": "user.address",
-          "options": {}
+          "options": {
+            "address": "=user.address"
+          }
         },
         {
           "$kind": "Microsoft.SwitchCondition",
