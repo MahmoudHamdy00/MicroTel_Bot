@@ -69,7 +69,8 @@
           "$designer": {
             "id": "dr6kW2"
           },
-          "activity": "${SendActivity_dr6kW2()}"
+          "activity": "${SendActivity_dr6kW2()}",
+          "disabled": true
         }
       ]
     }

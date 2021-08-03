@@ -1,12 +1,5 @@
 [import](common.lg)
 
-# SendActivity_dxc72o()
-[Activity
-    Text = ${SendActivity_dxc72o_text()}
-]
-
-# SendActivity_dxc72o_text()
-- you are in `user action`
 # SendActivity_qWqgxh_text()
 - Sorry I can't understand what  you want.
 # SendActivity_qWqgxh()
@@ -14,11 +7,10 @@
     Text = ${SendActivity_qWqgxh_text()}
 ]
 
-# SendActivity_WUYx3O()
+# SendActivity_Ed2YXt()
 [Activity
-    Text = ${SendActivity_WUYx3O_text()}
+    Text = ${SendActivity_Ed2YXt_text()}
 ]
 
-# SendActivity_WUYx3O_text()
-- ```user is ${@userInfo}
-tier is ${@tier}```
+# SendActivity_Ed2YXt_text()
+- hello ${user.fname} , ${user.mname}- ${user.lname}

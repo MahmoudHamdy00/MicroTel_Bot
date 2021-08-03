@@ -13,3 +13,11 @@
 [Activity
     Text = ${TextInput_Prompt_TQQnRc_text()}
 ]
+
+# TextInput_InvalidPrompt_TQQnRc()
+[Activity
+    Text = ${TextInput_InvalidPrompt_TQQnRc_text()}
+]
+
+# TextInput_InvalidPrompt_TQQnRc_text()
+- sorry you didn't enter any dates. please try again.

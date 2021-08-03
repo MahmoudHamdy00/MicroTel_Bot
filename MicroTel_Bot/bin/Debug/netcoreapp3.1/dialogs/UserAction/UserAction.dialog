@@ -17,20 +17,6 @@
       },
       "actions": [
         {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "dxc72o"
-          },
-          "activity": "${SendActivity_dxc72o()}"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "WUYx3O"
-          },
-          "activity": "${SendActivity_WUYx3O()}"
-        },
-        {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
             "id": "zRX7v7"
@@ -59,7 +45,6 @@
           },
           "activityProcessed": true,
           "dialog": "VerifyName",
-          "resultProperty": "user.fname",
           "options": {}
         },
         {
@@ -69,8 +54,14 @@
           },
           "activityProcessed": true,
           "dialog": "verifylname",
-          "resultProperty": "user.lname",
           "options": {}
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Ed2YXt"
+          },
+          "activity": "${SendActivity_Ed2YXt()}"
         },
         {
           "$kind": "Microsoft.BeginDialog",
@@ -79,8 +70,8 @@
           },
           "activityProcessed": true,
           "dialog": "verifyBirthdate",
-          "resultProperty": "user.birthdate",
-          "options": {}
+          "options": {},
+          "resultProperty": "user.birthdate"
         },
         {
           "$kind": "Microsoft.BeginDialog",

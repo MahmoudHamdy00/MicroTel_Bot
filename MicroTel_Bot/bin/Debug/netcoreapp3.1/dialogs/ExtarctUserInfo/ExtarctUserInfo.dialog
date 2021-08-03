@@ -17,13 +17,6 @@
       },
       "actions": [
         {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "S60Plc"
-          },
-          "activity": "${SendActivity_S60Plc()}"
-        },
-        {
           "$kind": "Microsoft.SetProperty",
           "$designer": {
             "id": "NGoaSY"
@@ -38,13 +31,6 @@
           },
           "property": "user.fname",
           "value": "=dialog.userInfo.name[0].fname[0]"
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "mpZKjx"
-          },
-          "activity": "${SendActivity_mpZKjx()}"
         },
         {
           "$kind": "Microsoft.SetProperty",

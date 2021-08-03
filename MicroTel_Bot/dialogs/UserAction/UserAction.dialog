@@ -45,7 +45,6 @@
           },
           "activityProcessed": true,
           "dialog": "VerifyName",
-          "resultProperty": "user.fname",
           "options": {}
         },
         {
@@ -55,8 +54,14 @@
           },
           "activityProcessed": true,
           "dialog": "verifylname",
-          "resultProperty": "user.lname",
           "options": {}
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Ed2YXt"
+          },
+          "activity": "${SendActivity_Ed2YXt()}"
         },
         {
           "$kind": "Microsoft.BeginDialog",
@@ -65,8 +70,8 @@
           },
           "activityProcessed": true,
           "dialog": "verifyBirthdate",
-          "resultProperty": "user.birthdate",
-          "options": {}
+          "options": {},
+          "resultProperty": "user.birthdate"
         },
         {
           "$kind": "Microsoft.BeginDialog",
