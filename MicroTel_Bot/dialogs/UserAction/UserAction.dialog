@@ -41,18 +41,6 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "YxOgsY"
-          },
-          "activityProcessed": true,
-          "dialog": "AddressDialog",
-          "resultProperty": "user.address",
-          "options": {
-            "address": "=user.address"
-          }
-        },
-        {
-          "$kind": "Microsoft.BeginDialog",
-          "$designer": {
             "id": "tn6L1m"
           },
           "activityProcessed": true,
@@ -91,6 +79,18 @@
           "resultProperty": "user.nationalID",
           "options": {
             "nationalID": "=user.nationalID"
+          }
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "vd4gsO"
+          },
+          "activityProcessed": true,
+          "dialog": "AddressDialog",
+          "resultProperty": "user.address",
+          "options": {
+            "address": "=user.address"
           }
         },
         {
