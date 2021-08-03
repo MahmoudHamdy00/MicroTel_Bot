@@ -35,7 +35,7 @@
               "alwaysPrompt": false,
               "allowInterruptions": false,
               "validations": [
-                "=exists(@dialog.country)",
+                "=exists(@country)",
                 "=@country.type==\"countryRegion\""
               ],
               "prompt": "${TextInput_Prompt_fcBCnU()}",

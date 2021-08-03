@@ -89,7 +89,7 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "vd4gsO"
+            "id": "J7GfMF"
           },
           "activityProcessed": true,
           "dialog": "AddressDialog",
