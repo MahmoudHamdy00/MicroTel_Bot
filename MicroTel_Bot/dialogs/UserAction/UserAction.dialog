@@ -71,12 +71,15 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "vnlzAc"
+            "id": "ANvefA",
+            "comment": ""
           },
           "activityProcessed": true,
           "dialog": "verifyNationalId",
           "resultProperty": "user.nationalID",
-          "options": {}
+          "options": {
+            "nationalID": "=user.nationalID"
+          }
         },
         {
           "$kind": "Microsoft.BeginDialog",
