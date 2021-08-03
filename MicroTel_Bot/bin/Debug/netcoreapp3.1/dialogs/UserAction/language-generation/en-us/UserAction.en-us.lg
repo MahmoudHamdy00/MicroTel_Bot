@@ -6,11 +6,3 @@
 [Activity
     Text = ${SendActivity_qWqgxh_text()}
 ]
-
-# SendActivity_RQUdR2()
-[Activity
-    Text = ${SendActivity_RQUdR2_text()}
-]
-
-# SendActivity_RQUdR2_text()
-- FINALLY ${user.nationalID}

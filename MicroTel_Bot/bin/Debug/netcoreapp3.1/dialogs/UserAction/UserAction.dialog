@@ -41,22 +41,14 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "4SARdK",
-            "comment": ""
+            "id": "YxOgsY"
           },
           "activityProcessed": true,
-          "dialog": "verifyNationalId",
-          "resultProperty": "user.nationalID",
+          "dialog": "AddressDialog",
+          "resultProperty": "user.address",
           "options": {
-            "nationalID": "=user.nationalID"
+            "address": "=user.address"
           }
-        },
-        {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "RQUdR2"
-          },
-          "activity": "${SendActivity_RQUdR2()}"
         },
         {
           "$kind": "Microsoft.BeginDialog",
@@ -91,12 +83,15 @@
         {
           "$kind": "Microsoft.BeginDialog",
           "$designer": {
-            "id": "62HMCh"
+            "id": "ANvefA",
+            "comment": ""
           },
           "activityProcessed": true,
-          "dialog": "verifyAddress",
-          "resultProperty": "user.address",
-          "options": {}
+          "dialog": "verifyNationalId",
+          "resultProperty": "user.nationalID",
+          "options": {
+            "nationalID": "=user.nationalID"
+          }
         },
         {
           "$kind": "Microsoft.SwitchCondition",

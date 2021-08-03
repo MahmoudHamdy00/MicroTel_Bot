@@ -61,7 +61,7 @@
           "$designer": {
             "id": "YnX43o"
           },
-          "value": "${dialog.nationalID}"
+          "value": "=dialog.nationalID"
         }
       ]
     }
