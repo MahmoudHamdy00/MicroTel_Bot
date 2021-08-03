@@ -17,26 +17,12 @@
       },
       "actions": [
         {
-          "$kind": "Microsoft.SendActivity",
-          "$designer": {
-            "id": "b1bPtT"
-          },
-          "activity": "${SendActivity_b1bPtT()}"
-        },
-        {
           "$kind": "Microsoft.IfCondition",
           "$designer": {
             "id": "h2nEsZ"
           },
           "condition": "=exists(user.fname)",
-          "actions": [
-            {
-              "$kind": "Microsoft.EndDialog",
-              "$designer": {
-                "id": "tLOceA"
-              }
-            }
-          ],
+          "actions": [],
           "elseActions": [
             {
               "$kind": "Microsoft.TextInput",
@@ -48,17 +34,50 @@
               "alwaysPrompt": false,
               "allowInterruptions": false,
               "prompt": "${TextInput_Prompt_k1ywbs()}",
-              "unrecognizedPrompt": "",
-              "invalidPrompt": "",
-              "defaultValueResponse": ""
+              "invalidPrompt": "${TextInput_InvalidPrompt_k1ywbs()}",
+              "validations": [
+                "=exists(@name)"
+              ]
             },
             {
-              "$kind": "Microsoft.EndDialog",
+              "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "aEFsbD"
-              }
+                "id": "Pz8RAV"
+              },
+              "activity": "${SendActivity_Pz8RAV()}"
+            },
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "PubMoc"
+              },
+              "value": "${@name.fname[0]}",
+              "property": "user.fname"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "cC2v46"
+              },
+              "condition": "=exists(@name.lname[0])",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SetProperty",
+                  "$designer": {
+                    "id": "UTlhcq"
+                  },
+                  "value": "${@name.lname[0]}",
+                  "property": "user.lname"
+                }
+              ]
             }
           ]
+        },
+        {
+          "$kind": "Microsoft.EndDialog",
+          "$designer": {
+            "id": "Sp7yjc"
+          }
         }
       ]
     }
